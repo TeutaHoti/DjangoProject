@@ -3,6 +3,7 @@ from django.http import Http404
 from django.db.models import Avg
 
 from .models import Book
+from django.models import *
 
 # Create your views here.
 
@@ -30,3 +31,4 @@ def book_detail(request, slug):
     "rating": book.rating,
     "is_bestseller": book.is_bestselling
   })
+  
